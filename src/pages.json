@@ -26,6 +26,12 @@
       "style": {
         "navigationBarTitleText": "登录"
       }
+    },
+		{
+      "path": "pages/user/setting",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
     }
 	],
   "subPackages": [{
@@ -70,7 +76,7 @@
       "backgroundColor": "#FFFFFF",
 			// #ifdef H5
 			"midButton": {
-				"iconPath": "static/images/tabbar/min-button.png",
+				"iconPath": "static/images/tabbar/mod_selected_3x.png",
 				"text": "监控",
 				"width": "125px",
 				"height": "74px",
@@ -79,13 +85,13 @@
 			// #endif
       "list": [{
           "pagePath": "pages/index",
-          "iconPath": "static/images/tabbar/index.png",
-          "selectedIconPath": "static/images/tabbar/index-selected.png",
+          "iconPath": "static/images/tabbar/layout_default_3x.png",
+          "selectedIconPath": "static/images/tabbar/layout_selected_3x.png",
           "text": "首页"
       }, {
-          "pagePath": "pages/mine",
-          "iconPath": "static/images/tabbar/user.png",
-          "selectedIconPath": "static/images/tabbar/user-selected.png",
+          "pagePath": "pages/user/setting",
+          "iconPath": "static/images/tabbar/my_default_3x.png",
+          "selectedIconPath": "static/images/tabbar/my_selected_3x.png",
           "text": "我的"
       }
     ]
