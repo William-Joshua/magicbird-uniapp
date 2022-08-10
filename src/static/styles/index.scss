@@ -1,0 +1,26 @@
+@import "./colorui/main.scss";
+@import "./colorui/icon.scss";
+@import "./colorui/animation.scss";
+@import "../icon/iconfont.scss";
+@import './common.scss';
+@import '@dcloudio/uni-ui/lib/uni-scss/index.scss';
+@import "vk-uview-ui/index.scss";
+
+image {
+  will-change: transform
+}
+
+.dy-radius {
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+// APP 和小程序的 导航栏 和 tabbar 均是原生控件，H5中是用div模拟出来的。分别为--window-top 和 --window-bottom
+// 框架中，h5不需要导航栏，统一设定"navigationStyle": "custom"，即去除了--window-top。 只保留tabbar，h5中会底部重叠，需注意--window-bottom
+.dy-full {
+  min-height: calc(100vh);
+  /* #ifdef H5 */
+  min-height: calc(100vh - var(--window-bottom));
+  /* #endif */
+}
