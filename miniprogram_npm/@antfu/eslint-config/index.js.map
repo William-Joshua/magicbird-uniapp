@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;;;AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"index.js","sourcesContent":["module.exports = {\n  extends: [\n    '@antfu/eslint-config-react',\n    '@antfu/eslint-config-vue',\n  ],\n}\n"]}

@@ -1,41 +1,56 @@
 <script>
 export default {
-  onLaunch: function() {
-    uni.onTabBarMidButtonTap(() => {
-			uni.navigateTo({
-				url: "/pages/login/index",
-				animationType: "slide-in-bottom",
-				animationDuration: 150
-			})
-		})
+  onLaunch: function() {  
+    uni.getSystemInfo({  
+        success:function(e){  
+            createSSRApp.prototype.statusBar = e.statusBarHeight  
+            // #ifndef MP  
+            if(e.platform == 'android') {  
+                Vue.prototype.customBar = e.statusBarHeight + 50  
+            }else {  
+                createSSRApp.prototype.customBar = e.statusBarHeight + 45  
+            }  
+            // #endif  
+
+            // #ifdef MP-WEIXIN  
+            let custom = wx.getMenuButtonBoundingClientRect()  
+            createSSRApp.prototype.customBar = custom.bottom + custom.top - e.statusBarHeight  
+            // #endif  
+
+            // #ifdef MP-ALIPAY  
+            createSSRApp.prototype.customBar = e.statusBarHeight + e.titleBarHeight  
+            // #endif  
+        }  
+    })  
     console.log('App Launch')
-  },
-  onShow: function() {
+},
+  onShow: function () {
     console.log('App Show')
   },
-  onHide: function() {
+  onHide: function () {
     console.log('App Hide')
   },
-  onPageNotFound: function() {
+  onPageNotFound: function () {
     uni.switchTab({
       url: '/pages/index'
     })
     console.log('App Page Not Found')
   },
-  onUnhandledRejection: function(e) {
+  onUnhandledRejection: function (e) {
     console.log(e)
   },
-  onError: function(e) {
+  onError: function (e) {
     console.log(e)
   }
 }
 </script>
 
 <style lang="scss">
-  @import "./static/styles/index.scss";
-	/*每个页面公共css */
-  page {
-    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #f7f7f7;
-  }
+@import "./static/styles/index.scss";
+
+/*每个页面公共css */
+page {
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f7f7f7;
+}
 </style>
