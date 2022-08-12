@@ -22,6 +22,12 @@
       }
     },
     {
+      "path": "pages/monitor/index",
+      "style": {
+        "navigationBarTitleText": "监控"
+      }
+    },
+    {
       "path": "pages/mine",
       "style": {
         "navigationBarTitleText": "我的"
@@ -90,12 +96,18 @@
       },
       {
         "pagePath": "pages/device/index",
-        "iconPath": "static/images/tabbar/mod_default_3x.png",
-        "selectedIconPath": "static/images/tabbar/mod_selected_3x.png",
+        "iconPath": "static/images/tabbar/assembly_default_3x.png",
+        "selectedIconPath": "static/images/tabbar/assembly_selected_3x.png",
         "text": "设备"
       },
       {
-        "pagePath": "pages/config/setting",
+        "pagePath": "pages/monitor/index",
+        "iconPath": "static/images/tabbar/mod_default_3x.png",
+        "selectedIconPath": "static/images/tabbar/mod_selected_3x.png",
+        "text": "监控"
+      },
+      {
+        "pagePath": "pages/mine",
         "iconPath": "static/images/tabbar/my_default_3x.png",
         "selectedIconPath": "static/images/tabbar/my_selected_3x.png",
         "text": "我的"

@@ -30,7 +30,7 @@
       <view class="cu-list menu">
         <view class="cu-item arrow">
           <view class="content">
-            <text class="cuIcon-moneybag text-black" />
+            <text class="cuIcon-apps text-black" />
             <text class="text-black u-font-md">渔场管理</text>
           </view>
         </view>
@@ -41,7 +41,7 @@
       <view class="cu-list menu">
         <view class="cu-item arrow">
           <view class="content">
-            <text class="cuIcon-pic text-black" />
+            <text class="cuIcon-record text-black" />
             <text class="text-black u-font-md">设备管理</text>
           </view>
         </view>
@@ -53,7 +53,7 @@
         </view>
         <view class="cu-item arrow">
           <view class="content">
-            <text class="cuIcon-like text-black" />
+            <text class="cuIcon-location text-black" />
             <text class="text-black u-font-md">位置管理</text>
           </view>
         </view>
@@ -63,7 +63,7 @@
     <view class="u-m-t-20 index-radius">
       <view class="cu-list menu">
         <view class="cu-item arrow">
-          <view class="content">
+          <view class="content" @click="navtoSetting">
             <text class="cuIcon-settings text-black" />
             <text class="text-black u-font-md">设置</text>
           </view>
@@ -89,7 +89,7 @@ import { iniTicket } from '/src/api/service/socialLogin'
  * ==================================================== data ====================================================
  */
 const { vuex_token, vuex_user } = useUserStore()
-const pic = ref('https://img-cdn-tc.dcloud.net.cn/uploads/avatar/000/15/95/31_avatar_max.jpg')
+const pic = ref('../static/images/logo.svg')
 
 /**
  * ==================================================== computed ====================================================
@@ -102,6 +102,14 @@ const needLogin = () => {
   // 登陆后返回当前页
   toLogin(vuex_token.value)
   console.log('do something need login, you should toLogin before.')
+}
+
+
+const navtoSetting=()=>
+{
+	uni.navigateTo({
+					url: "./config/setting"
+				})
 }
 /**
  * ==================================================== watch ====================================================

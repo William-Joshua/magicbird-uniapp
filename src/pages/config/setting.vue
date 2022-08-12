@@ -8,31 +8,31 @@
 			<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
 				<view class="cu-item arrow  margin-bottom-xs">
 					<view class="content">
-						<text class="cuIcon-github text-grey"></text>
+						<text class="cuIcon-myfill text-grey"></text>
 						<text class="text-black">账号与安全</text>
 					</view>
 				</view>
 				<view class="cu-item arrow margin-bottom-xs">
 					<view class="content">
-						<text class="cuIcon-github text-grey"></text>
+						<text class="cuIcon-more text-grey"></text>
 						<text class="text-black">关于</text>
 					</view>
 				</view>
 				<view class="cu-item arrow margin-bottom-xs">
 					<view class="content">
-						<text class="cuIcon-github text-grey"></text>
+						<text class="cuIcon-questionfill text-grey"></text>
 						<text class="text-black">帮助与反馈</text>
 					</view>
 				</view>
-				<view class="cu-item margin-bottom-xs">
-					<view class="content">
-						<text class="cuIcon-github text-grey"></text>
+				<view class="cu-item margin-bottom-xl">
+					<view class="content text-center">
+						<text class="text-grey"></text>
 						<text class="text-black">切换账号</text>
 					</view>
 				</view>
-				<view class="cu-item ">
+				<view class="cu-item text-center">
 					<view class="content">
-						<text class="cuIcon-github text-grey"></text>
+						<text class="text-grey"></text>
 						<text class="text-black">退出</text>
 					</view>
 				</view>
