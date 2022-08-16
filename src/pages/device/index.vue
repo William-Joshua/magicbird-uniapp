@@ -8,7 +8,7 @@
 		</view>
 		<swiper class="screen-swiper round-dot" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000"
 		 duration="500">
-		 <image :src="'/static/images/title/devicetitle.svg'" mode="aspectFill"></image>
+		 <image :src="'/static/images/cooperate/light/img_banner_3x.png'" mode="aspectFill"></image>
 		</swiper>
 		<view class="VerticalBox">
 			<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation :scroll-top="verticalNavTop" style="height:calc(100vh - 375upx)">
