@@ -8,29 +8,129 @@
   },
   "pages": [ // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages.html#pages
     {
-      "path": "pages/index",
+      "path": "pages/basics/home",
       "style": {
         // "navigationStyle": "default",
-        "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "元素"
         // "enablePullDownRefresh": true //开启下拉刷新
       }
     },
-    {
-      "path": "pages/device/index",
+	{
+	  "path": "pages/basics/avatar",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/background",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/button",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/design",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/icon",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/layout",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/loading",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/progress",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/shadow",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/tag",
+	  "style": {}
+	},
+	{
+	  "path": "pages/basics/text",
+	  "style": {}
+	},
+	{
+      "path": "pages/component/home",
       "style": {
-        "navigationBarTitleText": "设备"
+        "navigationBarTitleText": "组件"
       }
     },
+	{
+	  "path": "pages/component/bar",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/card",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/chat",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/form",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/list",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/modal",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/nav",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/steps",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/swiper",
+	  "style": {}
+	},
+	{
+	  "path": "pages/component/timeline",
+	  "style": {}
+	},
     {
-      "path": "pages/monitor/index",
+      "path": "pages/plugin/home",
       "style": {
-        "navigationBarTitleText": "监控"
+        "navigationBarTitleText": "扩展"
       }
     },
+	{
+	  "path": "pages/plugin/animation",
+	  "style": {}
+	},
+	{
+	  "path": "pages/plugin/drawer",
+	  "style": {}
+	},
+	{
+	  "path": "pages/plugin/indexes",
+	  "style": {}
+	},
+	{
+	  "path": "pages/plugin/verticalnav",
+	  "style": {}
+	},
     {
       "path": "pages/mine",
       "style": {
-        "navigationBarTitleText": "我的"
+        "navigationBarTitleText": "关于"
       }
     },
     {
@@ -89,22 +189,22 @@
     "backgroundColor": "#FFFFFF",
     "list": [
       {
-        "pagePath": "pages/index",
+        "pagePath": "pages/basics/home",
         "iconPath": "static/images/tabbar/layout_default_3x.png",
         "selectedIconPath": "static/images/tabbar/layout_selected_3x.png",
-        "text": "首页"
+        "text": "元素"
       },
       {
-        "pagePath": "pages/device/index",
+        "pagePath": "pages/component/home",
         "iconPath": "static/images/tabbar/assembly_default_3x.png",
         "selectedIconPath": "static/images/tabbar/assembly_selected_3x.png",
-        "text": "设备"
+        "text": "组件"
       },
       {
-        "pagePath": "pages/monitor/index",
+        "pagePath": "pages/plugin/home",
         "iconPath": "static/images/tabbar/mod_default_3x.png",
         "selectedIconPath": "static/images/tabbar/mod_selected_3x.png",
-        "text": "监控"
+        "text": "扩展"
       },
       {
         "pagePath": "pages/mine",

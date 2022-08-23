@@ -1,27 +1,6 @@
 <script>
 export default {
-  onLaunch: function() {  
-    uni.getSystemInfo({  
-        success:function(e){  
-            createSSRApp.prototype.statusBar = e.statusBarHeight  
-            // #ifndef MP  
-            if(e.platform == 'android') {  
-                Vue.prototype.customBar = e.statusBarHeight + 50  
-            }else {  
-                createSSRApp.prototype.customBar = e.statusBarHeight + 45  
-            }  
-            // #endif  
-
-            // #ifdef MP-WEIXIN  
-            let custom = wx.getMenuButtonBoundingClientRect()  
-            createSSRApp.prototype.customBar = custom.bottom + custom.top - e.statusBarHeight  
-            // #endif  
-
-            // #ifdef MP-ALIPAY  
-            createSSRApp.prototype.customBar = e.statusBarHeight + e.titleBarHeight  
-            // #endif  
-        }  
-    })  
+  onLaunch: function() {   
     console.log('App Launch')
 },
   onShow: function () {
